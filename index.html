@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadOX/sos</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2><i class="fas fa-book"></i> Categories</h2>
+            <ul>
+                <li><a href="#" data-category="manga"><i class="fas fa-book-open"></i> Manga</a></li>
+                <li><a href="#" data-category="manhua"><i class="fas fa-book"></i> Manhua</a></li>
+                <li><a href="#" data-category="manhwa"><i class="fas fa-book-reader"></i> Manhwa</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <header>
+                <input type="text" id="searchInput" placeholder="Search...">
+            </header>
+
+            <section id="content" class="content">
+                <!-- Dynamic content will be inserted here -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Popup for Details -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img id="popupImage" src="" alt="Popup Image">
+            <h3 id="popupTitle">Title</h3>
+            <p id="popupDescription">Description</p>
+            <a id="popupLink" href="#" class="button"><i class="fas fa-arrow-right"></i> Read</a>
+        </div>
+    </div>
+
+    <!-- Bottom Bar Navigation -->
+    <footer class="bottom-bar">
+        <a href="#" data-category="manga"><i class="fas fa-book-open"></i> Manga</a>
+        <a href="#" data-category="manhua"><i class="fas fa-book"></i> Manhua</a>
+        <a href="#" data-category="manhwa"><i class="fas fa-book-reader"></i> Manhwa</a>
+    </footer>
+
+    <!-- Toggle Sidebar Button -->
+    <button class="toggle-sidebar"><i class="fas fa-bars"></i></button>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
